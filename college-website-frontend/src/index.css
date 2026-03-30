@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Apply responsive scroll margin to sections for the sticky navbar */
+  [id] {
+    scroll-margin-top: 4rem; /* Standard for mobile (~64px) */
+  }
+  
+  @media (min-width: 1024px) {
+    [id] {
+      scroll-margin-top: 6rem; /* Standard for desktop (~96px) */
+    }
+  }
+}
